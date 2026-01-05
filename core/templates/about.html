@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-primary fw-bold text-uppercase small ls-1">Tentang Saya</span>
+            <h2 class="fw-bold mt-2">Riwayat & Perjalanan Karir</h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Pendidikan -->
+            <div class="col-lg-6">
+                <div class="card-modern p-4 h-100">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-3">
+                            <i class="fas fa-graduation-cap text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-0 fw-bold">Pendidikan</h4>
+                    </div>
+                    
+                    <table class="table-modern">
+                        <thead>
+                            <tr>
+                                <th>Tahun</th>
+                                <th>Institusi</th>
+                                <th>Jurusan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-muted">2025 - Saat ini</td>
+                                <td class="fw-bold">STT Terpadu Nurul Fikri Depok</td>
+                                <td><span class="badge bg-primary bg-opacity-10 text-primary rounded-pill">Teknik Informatika</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">2022 - 2025</td>
+                                <td class="fw-bold">SMA Negeri 6 Padangsidimpuan</td>
+                                <td><span class="badge bg-secondary bg-opacity-10 text-secondary rounded-pill">IPA</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">2019 - 2021</td>
+                                <td class="fw-bold">SMP Negeri 20 Jakarta Timur</td>
+                                <td><span class="badge bg-secondary bg-opacity-10 text-secondary rounded-pill"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Organisasi -->
+            <div class="col-lg-6">
+                <div class="card-modern p-4 h-100">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-info bg-opacity-10 p-3 rounded-3 me-3">
+                            <i class="fas fa-users text-info fs-4"></i>
+                        </div>
+                        <h4 class="mb-0 fw-bold">Organisasi</h4>
+                    </div>
+                    
+                    <table class="table-modern">
+                        <thead>
+                            <tr>
+                                <th>Tahun</th>
+                                <th>Organisasi</th>
+                                <th>Posisi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-muted">2022 - 2025</td>
+                                <td class="fw-bold">Pramuka</td>
+                                <td>Pradana</td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">2024 - 2025</td>
+                                <td class="fw-bold">Osis</td>
+                                <td>Sekretaris</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card-modern p-5">
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold">Hubungi Saya</h3>
+                        <p class="text-muted">Tertarik untuk berkolaborasi? Kirim pesan di bawah ini.</p>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-muted">NAMA</label>
+                            <input type="text" class="form-control bg-light border-0 py-3" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-muted">EMAIL</label>
+                            <input type="email" class="form-control bg-light border-0 py-3" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold text-muted">PESAN</label>
+                            <textarea class="form-control bg-light border-0" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-modern btn-primary-custom w-100 py-3">
+                            Kirim Pesan <i class="fas fa-paper-plane ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

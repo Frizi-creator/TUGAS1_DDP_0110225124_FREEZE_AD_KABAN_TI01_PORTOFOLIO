@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
+                <h1 class="hero-title mb-4">
+                    My Name is <br>
+                    <span class="gradient-text">Freeze AD Kaban</span>
+                </h1>
+                <p class="lead text-secondary mb-5" style="max-width: 500px;">
+                    Saya seorang Mahasiswa Semester 1 di Kampus STT Terpadu Nurul Fikri Kota Depok Program studi Teknik Informatika. Saya Lahir di Medan Umur saya sekarang 19 tahun. Saya tertarik dalam pengembangan web dan desain UI/UX.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="{% url 'about' %}" class="btn btn-modern btn-primary-custom">
+                        Tentang Saya <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="{% url 'contact' %}" class="btn btn-modern btn-outline-custom">
+                        Kontak Saya
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <div class="pc-card-wrapper">
+                    <div class="pc-behind"></div>
+                    
+                    <div class="pc-card-shell">
+                        <div class="pc-card">
+                            <div class="pc-shine"></div>
+                            <div class="pc-glare"></div>
+                            
+                            <img src="{% static 'images/profile.jpg' %}" alt="Freeze AD Kaban" class="pc-avatar-img">
+                            
+                            <div class="pc-overlay"></div>
+                            
+                            <div class="pc-inside">
+                                <div class="pc-user-info">
+                                    <img src="{% static 'images/profile.jpg' %}" alt="Mini Avatar" class="pc-mini-avatar">
+                                    
+                                    <div class="pc-user-text text-start">
+                                        <h3>Freeze AD Kaban</h3>
+                                        <p>@freeze</p>
+                                        <small class="text-info fw-bold" style="font-size: 10px;">Mahasiswa TI</small>
+                                    </div>
+                                    
+                                    <div class="ms-auto text-white">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </div>
+</section>
+{% endblock %}
